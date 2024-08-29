@@ -1,0 +1,28 @@
+nav ul{ /* itens da lista dentro do <nav> serão exibidos na horizontal */
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{ /* remove os marcadores padrão das listas */
+    list-style: none;
+    height: 125px;
+    padding: 0 25px 0 0;
+}
+nav ul li:hover{
+    background: #444444;
+}
+nav{/* Define a altura, largura máxima e mínima, e a cor de fundo do <nav> */
+    height: 125px;
+    max-width: 1480px;
+    min-width: 1080px;
+    background-color: black;     
+}
+nav #logo img{ /* altura da imagem do logo, a margem ao redor e alinha a imagem à esquerda */
+    height: 75px;
+    margin: 25px;
+    float:left;
+}
+nav #mainMenu{/* alinha à direita */
+    float:right;
+}
