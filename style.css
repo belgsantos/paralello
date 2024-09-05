@@ -1,19 +1,47 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0;/* remove a margem padrão do corpo */
+    padding: 0; /* remove o preenchimento padrão do corpo */
+    width: 100%;/* define a largura do corpo */
+    height: 100%;/* define a altura do corpo */
 }
 nav{
-    margin: 0 auto;
-    position: absolute;
-    top: 15px; 
-    width: 100%;
-    min-width: 1200px;
+    margin: 0 auto;/* centraliza a navegação horizontalmente */
+    position: absolute;/* posiciona a navegação de forma absoluta */
+    top: 15px; /* define o espaço do topo da navegação */
+    width: 100%;/* define a largura da navegação */
+    min-width: 1080px;/* define a largura mínima */
 }
-nav #mainMenu-geral{
-    max-width: 1480px;
-    height: 125px;
+nav #main-menu-geral{
+    max-width: 1480px;/*largura máxima  */
+    height: 125px;/*  altura  */
     margin: 0 auto;
-    background-color: black; 
+    background-color: black; /* define a cor de fundo do menu como preto */
+}
+nav ul li span{
+    float: left;/* alinha à esquerda */
+    color: #868686;/* cor do texto */
+    font-size: 11px;/* tamanho da fonte */
+    margin: 58px 3px 53px 15px;/* margem */
+}
+nav ul li a{
+    color:#fff;
+    font-size: 16px;
+    text-transform: uppercase; /* converte o texto para maiúsculas */
+    text-decoration: none; /*remove o sublinhado padrão dos links */
+    padding: 53px 15px 53px 0px; /* define o preenchimento interno */
+    float: left;
+    transition: all 1s; /* define uma transição suave para todas as propriedades durante 1 segundo*/
+}
+nav ul li a:hover{
+    text-decoration: line-through;/* adiciona um risco sobre o texto quando o link é hoverizado */
+    color: rgb(231,169,32);/* altera a cor do texto dos links para um tom de amarelo quando hoverizado */
+    transition: all 1s;/* mantém a transição suave para todas as propriedades durante 1 segundo */
+}
+nav ul li a span{
+    font-size: 11px;/* Define o tamanho da fonte dos spans dentro dos links */
+    color: #868686;/* Define a cor do texto dos spans */
+    margin: 5px 3px 0 0; /* Define a margem dos spans */
+    text-decoration: none;/* Remove o sublinhado dos spans */
 }
 nav ul{ /* itens da lista dentro do <nav> serão exibidos na horizontal */
     display: flex;
@@ -24,42 +52,69 @@ nav ul{ /* itens da lista dentro do <nav> serão exibidos na horizontal */
 nav ul li{ /* remove os marcadores padrão das listas */
     list-style: none;
     height: 125px;
-    padding: 0 25px 0 0;
+    transition: all 1s;
 }
-nav ul li span{
-    color: #868686;
-    font-size: 11px;
-    float: left;
-    margin: 58px 3px 53px 25px;
-}
-nav ul li a{
-    color:#fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 53px 25px 53px 0px;
-    float: left;
-}
-nav ul li a:hover{
-    text-decoration: line-through;
-    color: rgb(231,169,32);
-    transition: 1s;
+nav ul li :hover{
+    background:black;
+    transition: all 1s;
 }
 nav #logo img{ /* altura da imagem do logo, a margem ao redor e alinha a imagem à esquerda */
     height: 75px;
     margin: 25px;
     float:left;
 }
-nav #mainMenu{/* alinha à direita */
+nav #main-menu{/* alinha à direita */
     float:right;
 }
 .montserrat, nav ul li a{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Montserrat", sans-serif;/* Define a fonte como 'Montserrat', com fallback para sans-serif */
+  font-optical-sizing: auto;/* Permite que o tamanho da fonte se ajuste automaticamente para melhor legibilidade */
+  font-weight: 400;/* Define o peso da fonte como normal */
+  font-style: normal;/* Define o estilo da fonte como normal */
 }
-header img{
+header{
     width: 100%;
     height: 600px;
+}
+header .slide{
+    width: 100%;/* Define a largura do slide para 100% da tela */
+    height:600px ; /* Define a altura do slide para 600px */
+    object-fit: cover ;/* Faz com que a imagem cubra o elemento, mantendo a proporção */
+    position: absolute;/* Posiciona o slide de forma absoluta em relação ao contêiner pai */
+    z-index: -1;/* Define o índice z como -1 para que o slide fique atrás de outros elementos */
+}
+header #slide-bar{
+    margin-top: 320px;/* Define a margem superior para posicionar o contêiner do slide */
+    height: 280px;/* Define a altura do contêiner para 280px */
+    float: left;/* Alinha o contêiner à esquerda */
+    background-image: url(../img/yellow-bg.png);/* Define uma imagem de fundo para o contêiner */
+    width: 625px;/* Define a largura do contêiner para 625px */
+    padding: 0 0 0 60px;/* Define o preenchimento interno do contêiner */
+}
+header #txt_slide{
+    font-family: "Montserrat", sans-serif;/* Define a fonte como 'Montserrat', com fallback para sans-serif */
+    font-size: 14px; /* Define o tamanho da fonte para 14px */
+    margin-top: 50px;/* Define a margem superior para o texto */
+    color: white;/* Define a cor do texto como branco */
+    text-transform: uppercase;/* Converte o texto para maiúsculas */
+}
+header #titulo_slide{
+    font-size: 50px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+header #titulo_slide h4{
+    margin: 30px 0;
+}
+header .seta{
+    float: left;
+}
+header .direita{
+    margin-left: 20px;
+}
+.separador{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/divider-dark.png);
+    background-repeat: repeat-x;
 }

@@ -1,71 +1,83 @@
-<!doctype html>
-<html lang="pt-br"> <!-- define o HTML5 e a linguagem como português do brasil -->
+<!DOCTYPE html>
+<html lang = "pt-br">
     <head>
-        <meta charset = "UTF-8"> <!-- codificação de caracteres como UTF-8 -->
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> <!-- visualização para dispositivos móveis,  largura da página = largura da tela -->
-        <title> Parallelo Arquitetura e Construção</title> <!-- título da página que aparece na aba do navegador -->
-        
+        <meta charset = "UTF-8">  <!-- define o HTML5 e a linguagem como português do brasil -->
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">  <!-- visualização para dispositivos móveis,  largura da página = largura da tela --> 
+        <title> Parallelo Arquitetura e Construção </title>
+
         <!--importação de conteúdos-->
-        <link rel="stylesheet" href="css/style.css"> <!-- acesso ao CSS externo -->
+        <link rel = "stylesheet" href = "css/style.css">  <!-- acesso ao CSS externo -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     </head><!-- fecha a "cabeça"-->
     <body>
-        <nav> <!-- seção de navegação -->
-            <div id="mainMenu-geral">
-                <div id="logo" ><!-- logo-->
-                    <a href="index.html">
-                        <img src="img\logo-white.png">
+        <nav>
+            <div id = "main-menu-geral"><!-- seção de navegação -->
+                <div id = "logo">  <!-- logo-->
+                    <a href = "index.html">
+                        <img src = "img/logo-white.png">  <!--Tudo que vem antes do "/" significa que está selecionando algumma pasta em específico. Nesse caso, selecionamos a imagem que está dentro da pasta "img"-->
                     </a>
                 </div>
-                <div id="mainMenu"><!-- lista de itens de navegação -->
-                    <ul>
+                <div id = "main-menu">  <!--Cria um ID específio para selecionar todo o menu de navegação-->
+                    <ul>  <!--Adciona uma lista que terão os elemntos do menu de navegação-->
                         <li>
-                            <span>01. </span>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>          
-                            <span>02. </span>                  
-                            <a href="#">Trabalhos</a>
+                            <span>01.</span>
+                            <a href = "#"> Home </a><!-- lista de itens de navegação -->
                         </li>
                         <li>
-                            <span>03. </span>                            
-                            <a href="#">Scaneamento</a>
+                            <span>02.</span>                          
+                            <a href = "#"> Trabalhos </a>
                         </li>
-                        <li>            
-                            <span>04. </span>                
-                            <a href="#">Sobre</a>
+                        <li>
+                            <span>03.</span>                          
+                            <a href = "#"> Escaneamento </a>
                         </li>
-                        <li>           
-                            <span>05. </span>                 
-                            <a href="#">Lançamentos</a>
+                        <li>
+                            <span>04.</span>                          
+                            <a href = "#"> Sobre </a>
                         </li>
-                        <li>             
-                            <span>06. </span>               
-                            <a href="#">Contato</a>
+                        <li>
+                            <span>05.</span>                          
+                            <a href = "#"> Lançamentos </a>
+                        </li>
+                        <li>
+                            <span>06.</span>                          
+                            <a href = "#"> Contato </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <header><!-- início da seção de cabeçalho -->
-            <img src="img\slidebg1.jpg" width="100%">
-            <div id="slide-bar">
-                <h4>Lean Production</h4>
-                <img src="img/yellow-bg.png" width="137.111px"> 
-                <div class="seta direita">
-                    <a href="#">
-                        <img src="img/arrow-right.png">
-                    </a>
+            <img class = "slide" src = "img/slidebg1.jpg" width = "100%">  <!--Adiciona a imagem do helicóptero-->
+                <div id = "slide-bar">
+                    <div id="txt_slide">
+                        Projeto
+                    </div>
+                    <div id="titulo_slide">
+                        <h4>Lean Production</h4>
+                    </div>
+                    <div class = "seta esquerda">
+                        <a href = "#">
+                            <img src = "img/arrow-left.png">
+                        </a>
+                    </div>
+                    <div class = "seta direita">
+                        <a href = "#">
+                            <img src = "img/arrow-right.png">
+                        </a>
+                    </div>
                 </div>
-                <div class="seta esquerda">
-                    <a href="#">
-                        <img src="img/arrow-left.png">
-                    </a>
-                </div>
-            </div>
         </header>
+        <div class="separador">
+        </div>
+        <div class="icones">
+            <img src="img\pencil-and-ruler.png">
+            <img src="img\triangular-ruler.png">
+            <img src="img\pencil-holder.png">
+        </div>
     </body>
 </html>
